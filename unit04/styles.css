@@ -1,6 +1,7 @@
 h1{
     color:crimson;
     text-align: center;
+    border: 5px solid crimson
 }
 
 #teste1 {
@@ -20,5 +21,59 @@ h6 {
 
 h5 {
 
-    color: rgb(0,0,0);
+    color: rgb(255,255,0);
 }
+
+
+.teste3 {
+    background-color:rgba(0, 255, 100, 0.1)
+
+}
+p.dotted {border-style: dotted;}
+p.dashed {border-style: dashed;}
+p.solid {border-style: solid;}
+p.double {border-style: double;}
+p.groove {border-style: groove;}
+p.ridge {border-style: ridge;}
+p.inset {border-style: inset;}
+p.outset {border-style: outset;}
+p.none {border-style: none;}
+p.hidden {border-style: hidden;}
+p.mix {border-style: dotted dashed solid double;}
+
+p.um {
+    border-style: solid;
+    border-width: 5px;
+}
+p.dois {
+    border-style: solid;
+    border-width: medium;
+}
+p.tres {
+    border-style: solid;
+    border-width: 3px 4px 5px 20px;
+}
+
+p.redondin1 {
+      border: 2px solid black;
+      border-radius: 5px;
+
+}
+
+p.redondin2 {
+    border: 2px solid black;
+    border-radius: 9px;
+}
+
+p.redondin3 {
+    border: 2px solid black;
+    border-radius: 8px;
+}
+
+
+
+
+
+
+
+
