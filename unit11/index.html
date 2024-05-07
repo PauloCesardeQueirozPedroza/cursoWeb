@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>unit11 - Input's</title>
+</head>
+<body>
+    <div id="if">
+        <input type="password" id="senha">
+        <button
+            onclick="
+                var pass = document.getElementById('senha').value
+                console.log(pass)
+            "
+        
+        >
+            entrar
+        </button>
+    </div>
+
+    <div id="if2">
+        <input type="password" id="senha2">
+        <button
+            onclick="
+                var pass = document.getElementById('senha2').value
+                if(pass ==='123456'){
+                    alert('welcome!')
+                }
+                else{
+                    alert('tente novamente')
+                }
+            "
+        
+        >
+            entrar
+            </button>
+    </div>
+    <script SRC="script.js"></script>
+</body>
+</html>
