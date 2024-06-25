@@ -108,7 +108,23 @@ function atualizaTabela(item){
 }
 
 
+function fecharCompra(){
 
+    var htmlFinal = "Você Comprou ";
+    var soma = 0;
+    for(var i=0; i< itens.length; i++){
+        htmlFinal += itens[i].quantidadeItem + " "+ itens[i].nomeItem+ "-";
+        somq += itens[i].quantidadeItem * itens[i].precoItem
+    }
+    
+htmlFinal += " total:R$ " + soma;
+
+$("fechamentoCompra").text(htmlFinal);
+
+
+
+
+}
 
 
 
