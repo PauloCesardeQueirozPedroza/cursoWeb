@@ -28,15 +28,40 @@ function BuscarPersonagemAleatorio(){
 
 }
 
+
 function PreencherLabelPersonagem(data){
     console.log(data.name);
 
     $("#PersonagemAleatorioId").text(data.name);
 }
 
+
+$("#botaoBuscarFilmeId").click(buscarFilmePorPersonagem);
+
 function buscarFilmePorPersonagem(){
-    var nome = $("#buscaFilmePorNomePersonagem").val();
+    var nome = $("#buscarFilmePorNomePersonagem").val();
     $.get("https://swapi.dev/api/people/?search="+nome,popularTabela)
-    console.log(data.results[0].name)
     $("#labelFilmeDeId").text(data.results[0].name);
+}
+
+
+function popularTabela(data){
+    console.log(data.results[0].name);
+    $("#labelFilmeId").text(data.results[0].name);
+
+    $("#tabelaFilmesId").find("tr:gt(0)").remove();
+    for(var i = 0; i < data.results[0].films.length; i++){
+        $.get(data.results[0].films[i], criarLinha);
+    }
+
+}
+
+
+function criarLinha(data){
+    var htmlFinal =
+    "<tr><td>" + data.title + "</td>"+
+    "<td>" + data.episode_id + "</td>"+
+    "<td>" + data.director + "</td></tr>";
+
+    $("#tabelaFilmeID").append(htmlFinal)
 }
