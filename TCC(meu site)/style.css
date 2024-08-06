@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif; 
-    background-color: #333; 
+    background-color: #9c9c9c; 
     margin: 0; 
     padding: 0;
     display: flex; 
@@ -84,3 +84,386 @@ justify-content: space-around;
     font-size: 1em; 
     line-height: 1.4; 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.vertical {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 250px;
+    background-color: #dddddd;
+  }
+  
+  .vertical li a {
+      display: block;
+      color: black;
+      padding: 8px 16px;
+      text-decoration: none;
+      transition: 3s;
+  
+  }
+  
+  .vertical li a:hover {
+  background-color: #333333;
+  color: #ffffff;
+  box-shadow: 0 0 35px #ff0000;
+  transition: 0.3s;
+  }
+  
+  
+  
+  ul.horizontal {
+  
+  
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #ddddddad;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  .horizontal li {
+  
+  
+  float:left;
+  }
+  
+  .horizontal li a {
+  
+  display: block;
+  color: rgb(0, 110, 255);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: 3s;
+  }
+  
+  
+  .horizontal li a:hover {
+  
+    background-color: #333333;
+  color: #ffffff;
+  box-shadow: 0 0 35px #2a00779d;
+  transition: 0.3s;
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  }
+  
+  ul.menu {
+  
+  
+  
+  
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    background-color: #dddddd;
+    width: 100%;
+    border: 1px solid #353232;
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  }
+  
+  
+  
+  ul.submenu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    background-color: #000000;
+    display: none;
+    border: 1px solid #353232;
+  
+  
+  
+  
+  
+  
+  
+  }
+  
+  
+  .menu li {
+  
+  
+  float: left;
+  width: auto;
+  position: relative;
+  color: #999908;
+  border: 1px solid #353232;
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  }
+  
+  
+  .submenu li {
+    float: left;
+    width: 200px;
+    position: relative;
+    color: #ff0000;
+   
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  }
+  
+  .menu li a {
+  
+    
+  
+    display: block;
+    color: rgb(0, 112, 112);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 3s;
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  }
+  
+  .submenu li a {
+  
+  
+  
+  
+    display: block;
+    color: rgb(9, 0, 88);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 3s;
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  }
+  
+  
+  
+  .menu li a:hover {
+  
+  
+    background-color: #333333;
+    color: #ffffff;
+    box-shadow: 0 0 35px #ff00005d;
+    transition: 0.3s;
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  .menu li:hover > ul.submenu {
+  
+  display: block;
+  
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  .ex-fixed {
+    background-color: #dddddd;
+    border: 1px solid #000000;
+    padding: 16px;
+    position: fixed;
+    top: 0;
+    right: 0;
+  }
+  
+  
+  .ex-relative {
+    background-color: crimson;
+    border: 1px solid #000000;
+    position: relative;
+    left: 50px;
+    bottom: 25px;
+  }
+  
+  
+  .ex-absolute {
+    background-color: rgb(175, 0, 0);
+    border: 1px solid #818181;
+    position: absolute;
+    padding: 16px;
+    top: 0;
+  }
+  
+  
+  .ex2-relative {
+    background-color: crimson;
+    border: 1px solid #000000;
+    position: relative;
+  }
+  
+  
+  
+  .ex2-absolute {
+    background-color: rgb(180, 148, 6);
+    border: 1px solid #01003d;
+    position: absolute;
+    padding: 16px;
+    top: 0;
+    right: 0;
+  }
+  
+  
+  
+  .ex-sticky {
+    background-color: rgba(11, 0, 110, 0.363);
+    border: 1px solid #353232;
+    position: sticky;
+    padding: 10px;
+    top: 50px;
+  }
+
+
+
+ 
+.menu-box {
+      border: 2px solid #0000;
+      padding: 10px;
+      width: 200px;
+      background-color: #f9f9f9
+    }
+
+    .menu-box ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .menu-box li {
+        margin-bottom: 10px;
+    }
+
+    .menu-box a {
+        text-decoration: none;
+        color: #333;
+        display: block;
+        padding: 8px;
+        background-color: #e2e2e2;
+        border-radius: 4px;
+    }
+
+    .menu-box a:hover {
+        background-color: #d1d1d1
+    }
